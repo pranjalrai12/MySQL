@@ -1,0 +1,69 @@
+<!-- types of positions :-
+
+static - by deafault static positions , it wont accept l , r, b , t
+relative - when we want to positioned , it accepts l , r, b , t
+absolute - it will take the parent container 
+fixed - fixed any image ,  or any content   
+sticky - combination of fixed and relative  -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        height: 2000px;
+        width: 100%;
+        border: 2px solid;
+      }
+      .img {
+        height: 200px;
+        width: 200px;
+      }
+      /* #img1 {
+        position: static;
+        left: 100px;
+      }
+      #img1 {
+        position: relative;
+        left: 100px;
+      }
+      #img2 {
+        position: absolute;
+        top: 500px;
+        right: 100px;
+      }
+      #img4 {
+        position: fixed;
+      }
+      #img4 {
+        position: sticky;
+        top: 100px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbo6gu_zUHvpwRAZjbaeKKMGs9yC9lS29vwiLaE1W9UNVRPxBJlg6i9YZcb2EtftRYMrM75-YjUzp3QOe7TxbDJiTzdliIcnPj3c02LGn5&s=10"
+        id="img1"
+        class="img"
+        alt="cristiano ronaldo"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThlzYAN6X4ev6BVsvgP_seJnAJQefZ6IXOtz2lcOi3Lmpmo-VLZ5A9BVWcbI1-1Gfv-SFL9X8Ky5tUoJoSphyP6fVhvGKeoSqlDyWjoNdlWA&s=10"
+        id="img2"
+        class="img"
+        alt="lionel messi"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHkAXdlih60P5_ybUmgE0Z6P4iyvnJLAErWGIAvbwV2Mfwz7ViYA8KZQKzM4m1xEcjKKYLdhHZKuyp5hvY3y3ro7Dts5p2-Z4FBbEvnqKc&s=10"
+        id="img3"
+        class="img"
+        alt="Neymar jr"
+      />
+    </div>
+  </body>
+</html>

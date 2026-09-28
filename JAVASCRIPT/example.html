@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let age = prompt("enter the age");
+        if (age>0 && age<8){
+            document.writeln("you are kids")
+        }
+        else if (age>=8 && age<18){
+            document.writeln("you are teenager")
+        }
+        else if (age>=18 && age<45){
+            document.writeln("you are adult")
+        }
+        else{
+            document.writeln("you are gay")
+        }
+        
+        // ===========================================================
+
+        // switch case example - ATM example
+
+        let choice = Number(prompt(`Enter your choice for
+                             1. Withdraw
+                             2. Deposit
+                             3. Check balance
+                             4. Pin generate`))
+        switch (choice) {
+            case 1:
+                document.writeln("Withdraw successfully");
+                break;
+            case 2:
+                document.writeln("deposited successfully");
+                break;
+            case 3:
+                document.writeln("balance checked successfully");
+                break;
+            case 4:
+                document.writeln("Pin generated successfully");
+                break;        
+            default:
+                document.writeln("Your choice is fucked");
+                break;
+        }                     
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

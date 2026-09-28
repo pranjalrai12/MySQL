@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function FetchPhotos() {
+            try{
+                let response = await fetch("https://jsonplaceholder.typicode.com/photos")
+                let data = await response.json();
+                console.log("fetching post data" , data)
+            } catch (error) {
+                console.log(error.message)
+            }
+        }
+        
+                async function FetchTodos() {
+            try{
+                let response = await fetch("https://jsonplaceholder.typicode.com/todos")
+                let data = await response.json();
+                console.log("fetching comments data" , data)
+            } catch (error) {
+                console.log(error.message)
+            }
+        }
+
+        async function Fetchdata() {
+            await Fetchcomments();
+            await Fetchposts();
+        }
+
+        Fetchdata();
+    </script>
+</body>
+</html>

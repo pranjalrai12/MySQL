@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    /* p::first-line{
+        color: red;
+    }
+     */
+    p::first-letter{
+        color: blueviolet;
+        background-color: pink;
+    }
+
+    ul::before{
+        content: url(./HTML/images.webp);
+    }
+
+    ul::after{
+        content: url(./HTML/images.webp);
+    }
+    
+    ul li::marker{
+        content: '❤️';
+    }
+
+    ul li+li::marker{
+           content: '🙌';
+    }
+
+    ul li+li+li::marker{
+        content: '👌';
+    }
+
+    h2::selection{
+        color: greenyellow;
+        background-color: aqua;
+    }
+  </style>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam non
+      eos molestias culpa odio ipsa? Quo eligendi provident est saepe molestiae
+      cumque vitae possimus! Aliquam, laborum veniam natus velit ipsum vitae.
+      Eius a eligendi iusto facilis iure obcaecati nam, accusantium itaque
+      tempora, quidem numquam rem at, vel optio consequatur hic.
+    </p>
+
+    <ul>
+      <li>Hi</li>
+      <li>by</li>
+      <li>see u</li>
+      <li>thank you</li>
+    </ul>
+
+    <h2>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quam
+      deserunt a, laudantium natus temporibus laboriosam error incidunt
+      aspernatur delectus, expedita fugit blanditiis? Iusto voluptas animi
+      assumenda iste cum aut!
+    </h2>
+  </body>
+</html>

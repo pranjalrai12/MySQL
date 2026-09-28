@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a:active{
+            color: green;
+            background-color: yellow;
+        }
+
+        a:visited{
+            color: crimson;
+        }
+
+        input[type="radio"]:checked{
+            height: 50px;
+            width: 50px;
+            accent-color: purple;
+        }
+        input[type="checkbox"]:checked{
+            height: 50px;
+            width: 50px;
+            accent-color: purple;
+        }
+        
+        input[type="text"]:focus{
+            height: 50px;
+            width: 50px;
+            color: aqua;
+            background-color: chocolate;
+        }
+
+        button:hover{
+            color: black;
+            background-color: gold;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="https://www.chatgpt.com" target="_self">Go for Youtube</a> <br> <br>
+
+    <label for="gen">Gender</label>
+    <input type="radio" name="gen">Male
+    <input type="radio" name="gen">Female
+    <input type="radio" name="gen">Others <br> <br>
+
+    <label for="hob">Hobbies</label>
+    <input type="checkbox" name="hob">Cricket
+    <input type="checkbox" name="hob">Football
+    <input type="checkbox" name="hob">MMA <br> <br>
+
+    Address : <input type="text"> <br> <br>
+    
+    <button type="submit">Submit</button>
+
+
+</body>
+</html>

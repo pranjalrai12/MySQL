@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* descendent selector */
+        div h1{
+            color: aqua;
+        }
+        /* Child selector */
+        div>h1{
+            color: red;
+        }
+        /* adjacent selector */
+        div+h1{
+            color: blue;
+        }
+        /* General sibling selector */
+        div~h1{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>gay</h1>
+        <h1>transgender</h1>
+        <h1>male</h1>
+        <span><h1>female</h1></span>
+    </div>
+    <h1>Laksh</h1>
+    <h1>Pranjal</h1>
+</body>
+</html>

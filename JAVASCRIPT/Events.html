@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Click me</button>
+    <h1 style="height: 200px; width: 200px; border: 1px solid;" id="demo"></h1>
+    <button id="btn2">Submit</button>
+
+    <button id="otp">OTP generate</button>
+    <button id="btn3">change color</button>
+    <button id="onMO">onMouseOver</button>
+    <button id="onML">onMouseLeave</button>
+
+    <input type="text" id="keyP">
+    <button id="btn4">Event</button>
+    
+    <script>
+        // const btn2 = document.getElementById("btn")
+        // btn2.onclick = function(){
+            // const text = document.writeln("laksh is guy")
+            // text.style.color = "red"
+            // const btn2 = document.getElementById("btn2")
+            // btn2.style.backgroundColor = "red"
+            
+            // const otp = document.getElementById("otp")
+            // otp.onclick = function() {
+            //     let otp1 = Math.floor(Math.random()*10000)
+            //     alert(`my otp is ${otp1}`)
+            // }
+
+            // const btn3 = document.getElementById("btn3")
+            // btn3.onclick = function(e){
+            //       let num = Math.floor(Math.random()*10000)
+            //       document.body.style.backgroundColor = `#${num}`
+            // }
+
+            // const onMO = document.getElementById("onMO")
+            // onMO.onmouseover = function(){
+            //     document.writeln("hy debugshala")
+            // }
+            
+            // const onML = document.getElementById("onML")
+            // onML.onmouseleave = function(){
+            //     document.writeln("hy debugshala")
+            // }
+            
+
+            // const keyP = document.getElementById("keyP")
+            // keyP.onkeypress = function(e){
+            //     console.log(e);
+            //     document.writeln("entered key is :",e.key)
+            //     document.writeln("entered key is:",e.keycode)
+            // }
+
+            function addEvent(){
+                document.writeln("hy i am addEventlistener")
+
+                const btn4 = document.querySelector("#btn4")
+                btn4.addEventListener("click",addEvent)
+            }
+    </script>
+</body>
+</html>
